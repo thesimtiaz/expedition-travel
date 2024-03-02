@@ -17,6 +17,26 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+.section-description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.btn-primary {
+  padding: 16px;
+  border-radius: 8px;
+  background: #ff5400;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: #131318;
+  transition: all 0.5s;
+}
 /* navbar styles starts here */
 nav {
   display: flex;
@@ -67,6 +87,51 @@ a:hover {
 }
 /* navbar styles ends here */
 
+/* banner styles starts here */
+#banner {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../assets/images/banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 50px;
+}
+.banner-title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+form {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+form,
+#gsearch,
+#bdaymonth,
+#select-type {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+#banner form .fa-solid {
+  margin-right: 8px;
+}
 /* banner styles ends here */
 
 /* responsive media queries */
@@ -82,6 +147,14 @@ a:hover {
   .checkbtn {
     margin-right: 20px;
   }
+  #banner {
+    padding: 50px 0;
+    background-position: center;
+  }
+  form {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 /* tablet devices */
@@ -91,6 +164,14 @@ a:hover {
   }
   nav ul li a {
     font-size: 16px;
+  }
+  form {
+    flex-direction: column;
+    gap: 25px;
+  }
+  #banner {
+    padding: 50px 0;
+    background-position: center;
   }
 }
 
