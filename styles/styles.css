@@ -60,7 +60,7 @@ nav {
   padding: 0 50px;
   gap: 16px;
 }
-#logo-container .travel {
+.travel {
   color: #ff5400;
 }
 nav ul {
@@ -342,6 +342,36 @@ form,
 }
 /* choose us styles ends here */
 
+/* footer styles stars here */
+footer {
+  margin-top: 100px;
+  background: rgba(19, 19, 24, 0.05);
+  padding: 100px;
+}
+#footer {
+  text-align: center;
+}
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.social-media {
+  margin-top: 32px;
+  font-size: 36px;
+}
+.social-media a {
+  color: #131318;
+  margin-right: 24px;
+}
+.horizontal {
+  margin: 50px 0;
+}
+/* footer styles ends here */
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 600px) {
@@ -396,6 +426,19 @@ form,
   .bandarban {
     padding: 90px;
     margin-bottom: 15px;
+  }
+  #footer {
+    padding: 0;
+  }
+  .brand-container,
+  .logo-text {
+    font-size: 18px;
+  }
+  .social-media {
+    font-size: 28px;
+  }
+  .social-media a {
+    margin-right: 5px;
   }
 }
 
