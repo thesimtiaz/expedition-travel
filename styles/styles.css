@@ -21,7 +21,7 @@ body {
   font-weight: 800;
 }
 .section-description {
-  color: #fff;
+  color: rgba(19, 19, 24, 0.7);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -113,6 +113,12 @@ a:hover {
   font-weight: 800;
   margin-bottom: 24px;
 }
+.banner-description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
 form {
   display: flex;
   justify-content: space-around;
@@ -148,9 +154,6 @@ form,
   margin-top: 100px;
   gap: 50px;
 }
-#popular .text-container .section-description {
-  color: rgba(19, 19, 24, 0.7);
-}
 .text-container {
   width: 50%;
 }
@@ -166,6 +169,137 @@ form,
   border-radius: 16px;
 }
 /* popular styles ends here */
+
+/* destination styles starts here */
+#destination {
+  margin-top: 100px;
+}
+.destination-text {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.destination-img {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+.maldives {
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../assets/images/maldives.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 150px;
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.indonesia {
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../assets/images/indonesia.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 150px;
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.srilanka {
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../assets/images/srilanka.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 150px 100px;
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.north-america {
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../assets/images/north-america.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 150px 100px;
+  flex-grow: 2;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.kashmir {
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../assets/images/kashmir.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 150px 100px;
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.bangladesh {
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../assets/images/bangladesh.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 150px;
+  flex-grow: 1;
+  text-align: center;
+}
+.bandarban {
+  background-image: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../assets/images/bandarban.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 150px;
+  flex-grow: 1;
+  text-align: center;
+}
+.one,
+.two,
+.three {
+  display: flex;
+  gap: 24px;
+}
+/* destination styles ends here */
 
 /* responsive media queries */
 /* mobile devices */
@@ -191,7 +325,10 @@ form,
     flex-direction: column;
     gap: 25px;
   }
-  #popular {
+  #popular,
+  .one,
+  .two,
+  .three {
     flex-direction: column;
   }
   #popular .text-container {
@@ -199,6 +336,21 @@ form,
   }
   #popular .img-container {
     width: 100%;
+  }
+  .one,
+  .two,
+  .three {
+    gap: 0;
+  }
+  .maldives,
+  .indonesia,
+  .srilanka,
+  .north-america,
+  .kashmir,
+  .bangladesh,
+  .bandarban {
+    padding: 90px;
+    margin-bottom: 15px;
   }
 }
 
@@ -221,7 +373,10 @@ form,
     padding: 50px 0;
     background-position: center;
   }
-  #popular {
+  #popular,
+  .one,
+  .two,
+  .three {
     flex-direction: column;
   }
   #popular .text-container {
@@ -229,6 +384,21 @@ form,
   }
   #popular .img-container {
     width: 100%;
+  }
+  .one,
+  .two,
+  .three {
+    gap: 0;
+  }
+  .maldives,
+  .indonesia,
+  .srilanka,
+  .north-america,
+  .kashmir,
+  .bangladesh,
+  .bandarban {
+    padding: 100px;
+    margin-bottom: 15px;
   }
 }
 
