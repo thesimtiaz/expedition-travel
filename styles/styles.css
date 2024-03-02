@@ -176,7 +176,6 @@ form,
 
 /* destination styles starts here */
 #destination {
-  
 }
 .destination-img {
   color: #fff;
@@ -301,6 +300,48 @@ form,
 }
 /* destination styles ends here */
 
+/* choose us styles starts here */
+.service-title {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+.service-container img {
+  margin-bottom: 24px;
+}
+.service-container .service-title {
+  margin-bottom: 16px;
+}
+.service-col {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.hotels {
+  width: 50%;
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.service {
+  width: 50%;
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.guarantee {
+  width: 50%;
+  padding: 35px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+/* choose us styles ends here */
+
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 600px) {
@@ -328,10 +369,14 @@ form,
   #popular,
   .one,
   .two,
-  .three {
+  .three,
+  .service-col {
     flex-direction: column;
   }
-  #popular .popular-text {
+  #popular .popular-text,
+  .hotels,
+  .service,
+  .guarantee {
     width: 100%;
   }
   #popular .img-container {
