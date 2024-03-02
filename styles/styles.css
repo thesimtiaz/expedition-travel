@@ -418,6 +418,37 @@ input[type="email"] {
 }
 /* newsletter styles ends here */
 
+/* review styles stars here */
+.review-container {
+  display: flex;
+  gap: 24px;
+}
+.review-container .box {
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.review-container .box img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.review-container .box h3 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.review-container .box .stars i {
+  color: #ff5400;
+  font-size: 28px;
+  margin-top: 16px;
+}
+/* review styles ends here */
+
 /* footer styles stars here */
 footer {
   margin-top: 100px;
@@ -477,7 +508,8 @@ footer {
   .two,
   .three,
   .service-col,
-  #newsletter {
+  #newsletter,
+  .review-container {
     flex-direction: column;
   }
   #popular .popular-text,
@@ -566,7 +598,8 @@ footer {
   .one,
   .two,
   .three,
-  #newsletter {
+  #newsletter,
+  .review-container {
     flex-direction: column;
   }
   #popular .popular-text {
