@@ -342,7 +342,7 @@ form,
 }
 /* choose us styles ends here */
 
-/* newsletter styles stars here */
+/* newsletter styles starts here */
 #newsletter {
   display: flex;
   align-items: center;
@@ -418,7 +418,7 @@ input[type="email"] {
 }
 /* newsletter styles ends here */
 
-/* review styles stars here */
+/* review styles starts here */
 .review-container {
   display: flex;
   gap: 24px;
@@ -449,7 +449,7 @@ input[type="email"] {
 }
 /* review styles ends here */
 
-/* footer styles stars here */
+/* footer styles starts here */
 footer {
   margin-top: 100px;
   background: rgba(19, 19, 24, 0.05);
