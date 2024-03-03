@@ -411,6 +411,10 @@ form,
   padding: 50px 50px;
   align-self: end;
 }
+#deals .deals-container .btn-primary {
+  display: block;
+  margin: 0 auto;
+}
 /* deals styles ends here */
 
 /* newsletter styles starts here */
