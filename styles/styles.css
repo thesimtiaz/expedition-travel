@@ -560,6 +560,9 @@ footer {
   .container {
     padding: 0 20px;
   }
+  .section-title {
+    font-size: 20px;
+  }
   #logo-container {
     padding-left: 10px;
   }
@@ -573,6 +576,13 @@ footer {
   #banner {
     padding: 50px 0;
     background-position: center;
+  }
+  .banner-title {
+    font-size: 22px;
+  }
+  .banner-description,
+  .section-description {
+    font-size: 14px;
   }
   form {
     flex-direction: column;
@@ -592,6 +602,9 @@ footer {
   .service,
   .guarantee {
     width: 100%;
+  }
+  #popular {
+    gap: 0px;
   }
   #popular .img-container {
     width: 100%;
